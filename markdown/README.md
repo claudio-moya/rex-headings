@@ -43,10 +43,10 @@ Example:
 
 ```js
 import 'rex-core'; // ReX Core dependency
-import RexComponent from '__COMPONENT_NAME__';
+import Headings from '__COMPONENT_NAME__';
 
 function MyComponent() {
-  return <RexComponent>Hello World</RexComponent>;
+  return <Headings>This is a sample text.</Headings>;
 }
 ```
 
@@ -61,7 +61,7 @@ import 'rex-core/css'; // ReX Core dependency
 import '__COMPONENT_NAME__/css';
 
 function MyComponent() {
-  return <div className="rex-css-style my-component">Hello World</div>;
+  return <h1 class="rex-headings">This is a sample text.</h1>;
 }
 ```
 
@@ -91,7 +91,7 @@ Example:
 
 ```markdown
 <div class="rex-css-style my-component">
-  <h1>Welcome to React</h1>
+  <h1 class="rex-headings">This is a sample text.</h1>
 </div>
 ```
 

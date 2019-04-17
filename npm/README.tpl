@@ -25,11 +25,7 @@ npm install __COMPONENT_NAME__@__VERSION__ --save
 
 ## What you can do
 
-This project is a started kit, it contains the settings to start the creations of a React component and publish it to NPM.   
-
-Use it as a basement and reference for your own project and customize it as you will.  
-
-If you need a full environment to create a React Web App, try the react-create-app to get a full environment for your App or use any other started kit.
+Headings are used to create hierarchy in your content and set the expectations for the content that follows. They can be used for heading an article, as well as a section or a subsection.
 
 ### Live examples
 
@@ -47,10 +43,10 @@ Example:
 
 ```js
 import 'rex-core'; // ReX Core dependency
-import RexComponent from '__COMPONENT_NAME__';
+import Headings from '__COMPONENT_NAME__';
 
 function MyComponent() {
-  return <RexComponent>Hello World</RexComponent>;
+  return <Headings>This is a sample text.</Headings>;
 }
 ```
 
@@ -65,7 +61,7 @@ import 'rex-core/css'; // ReX Core dependency
 import '__COMPONENT_NAME__/css';
 
 function MyComponent() {
-  return <div className="rex-css-style my-component">Hello World</div>;
+  return <h1 class="rex-headings">This is a sample text.</h1>;
 }
 ```
 
@@ -95,7 +91,7 @@ Example:
 
 ```markdown
 <div class="rex-css-style my-component">
-  <h1>Welcome to React</h1>
+  <h1 class="rex-headings">This is a sample text.</h1>
 </div>
 ```
 

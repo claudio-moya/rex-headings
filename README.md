@@ -20,16 +20,12 @@ https://www.npmjs.com/org/rakuten-rex
 # How to install
 
 ```
-npm install rex-headings@1.1.2 --save
+npm install rex-headings@1.2.0 --save
 ```
 
 ## What you can do
 
-This project is a started kit, it contains the settings to start the creations of a React component and publish it to NPM.   
-
-Use it as a basement and reference for your own project and customize it as you will.  
-
-If you need a full environment to create a React Web App, try the react-create-app to get a full environment for your App or use any other started kit.
+Headings are used to create hierarchy in your content and set the expectations for the content that follows. They can be used for heading an article, as well as a section or a subsection.
 
 ### Live examples
 
@@ -47,10 +43,10 @@ Example:
 
 ```js
 import 'rex-core'; // ReX Core dependency
-import RexComponent from 'rex-headings';
+import Headings from 'rex-headings';
 
 function MyComponent() {
-  return <RexComponent>Hello World</RexComponent>;
+  return <Headings>This is a sample text.</Headings>;
 }
 ```
 
@@ -65,7 +61,7 @@ import 'rex-core/css'; // ReX Core dependency
 import 'rex-headings/css';
 
 function MyComponent() {
-  return <div className="rex-css-style my-component">Hello World</div>;
+  return <h1 class="rex-headings">This is a sample text.</h1>;
 }
 ```
 
@@ -79,7 +75,7 @@ For development mode:
 <!-- ReX Core -->
 <link href="https://r.r10s.jp/com/rex/rex-core/1.4.0/rex-core.development.css" rel="stylesheet">
 <!-- rex-headings -->
-<link href="https://r.r10s.jp/com/rex/rex-headings/1.1.2/rex-headings.development.css" rel="stylesheet">
+<link href="https://r.r10s.jp/com/rex/rex-headings/1.2.0/rex-headings.development.css" rel="stylesheet">
 ```
 
 For production mode:
@@ -88,14 +84,14 @@ For production mode:
 <!-- ReX Core -->
 <link href="https://r.r10s.jp/com/rex/rex-core/1.4.0/rex-core.production.min.css" rel="stylesheet">
 <!-- rex-headings -->
-<link href="https://r.r10s.jp/com/rex/rex-headings/1.1.2/rex-headings.production.min.css" rel="stylesheet">
+<link href="https://r.r10s.jp/com/rex/rex-headings/1.2.0/rex-headings.production.min.css" rel="stylesheet">
 ```
 
 Example: 
 
 ```markdown
 <div class="rex-css-style my-component">
-  <h1>Welcome to React</h1>
+  <h1 class="rex-headings">This is a sample text.</h1>
 </div>
 ```
 
