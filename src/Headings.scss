@@ -1,0 +1,224 @@
+@import './scss/alignment';
+@mixin headings {
+  @include alignment(); //** English & Japanese
+  $font-size-base: 1.6rem !default; // English `16px`
+  $font-size-base-ja: 1.4rem !default; // Japanese `14px`
+  $font-size-large: 1.8rem !default;
+  $font-size-large-ja: 1.6rem !default;
+  $font-size-small: 1.4rem !default;
+  $font-size-small-ja: 1.2rem !default;
+  $font-size-extra-small: 1.2rem !default;
+  $font-size-extra-small-ja: 1rem !default;
+  $font-size-lead: 2.2rem !default;
+  $font-size-lead-ja: 2rem !default;
+  $font-size-h1: 2.4rem !default;
+  $font-size-h2: 2rem !default;
+  $font-size-h3: 1.6rem !default;
+  $font-size-h4: 1.4rem !default;
+  $font-size-h5: 1.2rem !default;
+  $font-size-h6: 1.2rem !default;
+  $font-size-h1-mobile: 2rem !default;
+  $font-size-h2-mobile: 1.6rem !default;
+  $font-size-h3-mobile: 1.4rem !default;
+  $font-size-h4-mobile: 1.2rem !default;
+  $font-size-h5-mobile: 1rem !default;
+  $font-size-h6-mobile: 1rem !default;
+  $display1-size: 4.6rem;
+  $display2-size: 4rem;
+  $display3-size: 3.6rem;
+  $display4-size: 3.2rem;
+  $display5-size: 2.8rem;
+  $display1-size-mobile: 3.6rem;
+  $display2-size-mobile: 3.4rem;
+  $display3-size-mobile: 3.2rem;
+  $display4-size-mobile: 3rem;
+  $display5-size-mobile: 2.8rem;
+  $headings-line-height: 1.5;
+  $screen-sm-container-max-widths: 54rem;
+  $headings-font-weight: 500 !default;
+  $headings-line-height: 1.5 !default;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-family: inherit;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    color: #333;
+    small,
+    .small,
+    .secondary-text {
+      font-weight: normal;
+      line-height: 1;
+      color: #666;
+    }
+  }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    font-weight: inherit;
+  }
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    small,
+    .small {
+      font-size: 80%;
+    }
+  }
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    small,
+    .small {
+      font-size: 85%;
+    }
+  }
+  h1,
+  .h1 {
+    font-size: $font-size-h1;
+    .secondary-text {
+      font-size: 2rem;
+    }
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $font-size-h1-mobile;
+      .secondary-text {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  h2,
+  .h2 {
+    font-size: $font-size-h2;
+    .secondary-text {
+      font-size: 1.6rem;
+    }
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $font-size-h2-mobile;
+      .secondary-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  h3,
+  .h3 {
+    font-size: $font-size-h3;
+    .secondary-text {
+      font-size: 1.2rem;
+    }
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $font-size-h3-mobile;
+      .secondary-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  h4,
+  .h4 {
+    font-size: $font-size-h4;
+    .secondary-text {
+      font-size: 1.2rem;
+    }
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $font-size-h4-mobile;
+      .secondary-text {
+        font-size: 1rem;
+      }
+    }
+  }
+  h5,
+  .h5 {
+    font-size: $font-size-h5;
+    .secondary-text {
+      font-size: 1rem;
+    }
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $font-size-h5-mobile;
+      .secondary-text {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  h6,
+  .h6 {
+    font-size: $font-size-h6;
+    .secondary-text {
+      font-size: 1rem;
+    }
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $font-size-h6-mobile;
+      .secondary-text {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .secondary-text {
+    margin-left: 0.25em;
+  }
+  .display-1 {
+    font-size: $display1-size;
+    line-height: $headings-line-height;
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $display1-size-mobile;
+    }
+  }
+  .display-2 {
+    font-size: $display2-size;
+    line-height: $headings-line-height;
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $display2-size-mobile;
+    }
+  }
+  .display-3 {
+    font-size: $display3-size;
+    line-height: $headings-line-height;
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $display3-size-mobile;
+    }
+  }
+  .display-4 {
+    font-size: $display4-size;
+    line-height: $headings-line-height;
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $display4-size-mobile;
+    }
+  }
+  .display-5 {
+    font-size: $display5-size;
+    line-height: $headings-line-height;
+    @media (max-width: $screen-sm-container-max-widths) {
+      font-size: $display5-size-mobile;
+    }
+  }
+  .display-1,
+  .display-2,
+  .display-3,
+  .display-4,
+  .display-5 {
+    margin-bottom: 0.5em;
+    font-weight: normal !important;
+  }
+}
+
+@include headings();
