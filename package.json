@@ -1,6 +1,6 @@
 {
   "name": "rex-headings",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "ReX React UI Component",
   "main": "src/Headings.jsx",
   "scripts": {
