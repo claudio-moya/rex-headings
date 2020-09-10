@@ -1,3 +1,9 @@
+========================================================================================
+
+# This project has been deprecated and is not longer supported
+
+========================================================================================
+
 # ReX React UI Components Library
 ## ReX React UI Component: rex-headings
 
